@@ -1,6 +1,7 @@
 from django.shortcuts import render
 # from django.http import HttpResponse
 from django.views.generic import TemplateView
+from datetime import datetime
 
 
 # Create your views here.
@@ -35,5 +36,5 @@ class NewsView(TemplateView):
         context_data = super().get_context_data(**kwargs)
         context_data['title'] = 'Новость раз'
         context_data['preview'] = 'Превью к новости раз'
-        context_data['date'] = '2022-01-01'
+        context_data['date'] = datetime.now()
         return context_data
