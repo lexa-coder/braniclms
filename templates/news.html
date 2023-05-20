@@ -4,51 +4,16 @@
     <div class="row">
 
         <div class="col-lg-8">
-
+            {% for item in object_list %}
             <div class="card my-2">
                 <div class="card-body">
-                    <h5 class="card-title">{{ title }}</h5>
-                    <h6 class="card-subtitle mb-2 text-muted">{{ date|date:'d.m.Y.'}}</h6>
-                    <p class="card-text">{{ preview }}</p>
+                    <h5 class="card-title">{{ item.title }}</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">{{ item.date|date:'d.m.Y'}}</h6>
+                    <p class="card-text">{{ item.preview }}</p>
                     <a href="#" class="card-link">Подробнее</a>
                 </div>
             </div>
-
-            <div class="card my-2">
-                <div class="card-body">
-                    <h5 class="card-title">Новость</h5>
-                    <h6 class="card-subtitle mb-2 text-muted">2021-04-28 20-50-26</h6>
-                    <p class="card-text">Предварительное описание новости</p>
-                    <a href="#" class="card-link">Подробнее</a>
-                </div>
-            </div>
-
-            <div class="card my-2">
-                <div class="card-body">
-                    <h5 class="card-title">Новость</h5>
-                    <h6 class="card-subtitle mb-2 text-muted">2021-04-27 20-50-26</h6>
-                    <p class="card-text">Предварительное описание новости</p>
-                    <a href="#" class="card-link">Подробнее</a>
-                </div>
-            </div>
-
-            <div class="card my-2">
-                <div class="card-body">
-                    <h5 class="card-title">Новость</h5>
-                    <h6 class="card-subtitle mb-2 text-muted">2021-04-26 20-50-26</h6>
-                    <p class="card-text">Предварительное описание новости</p>
-                    <a href="#" class="card-link">Подробнее</a>
-                </div>
-            </div>
-
-            <div class="card mt-2">
-                <div class="card-body">
-                    <h5 class="card-title">Новость</h5>
-                    <h6 class="card-subtitle mb-2 text-muted">2021-04-25 20-50-26</h6>
-                    <p class="card-text">Предварительное описание новости</p>
-                    <a href="#" class="card-link">Подробнее</a>
-                </div>
-            </div>
+            {% endfor %}
 
         </div>
 
