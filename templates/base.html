@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
 
     <!-- ChartJS -->
-    <link rel="stylesheet" href="{% static 'css/Chart.min.cs' %}">
+    <link rel="stylesheet" href="{% static 'css/Chart.min.css' %}">
 
     <!-- FontAwesome -->
     <link rel="stylesheet" href="{% static 'css/fontawesome.all.min.css' %}">
@@ -27,7 +27,7 @@
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
-            <a class="navbar-brand" href="">
+            <a class="navbar-brand" href="{% url 'index' %}">
                 <img src="{% static 'img/logo.png' %}" alt="">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -115,7 +115,7 @@
     <script src="{% static 'js/Chart.min.js' %}"></script>
 
     <!-- FontAwesome -->
-    <script src="{% static 'js/fontawesome.all.min' %}"></script>
+    <script src="{% static 'js/fontawesome.all.min.js' %}"></script>
 
 </body>
 </html>

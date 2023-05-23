@@ -38,6 +38,7 @@ class ContactsView(TemplateView):
 
         return context_data
 
+
 class CursesListView(TemplateView):
     template_name = 'courses_list.html'
 
